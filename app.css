@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Arial';
+}
+
+input, a {
+  border-radius: 5px;
+}
+
+.mm-text {
+  color: white;
+  font-size: 70px;
+  font-family: 'Sacramento';
+}
+
+.small-font {
+  font-size: 24px;
+}
+
+#app-container {
+  height: calc(100% - 50px);
+}
+
+.base-section {
+   height: calc(100% - 150px);
+   padding: 50px;
+   padding-top: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#top-section {
+  background-color: mediumpurple;
+  flex-direction: column;
+}
+
+#middle-section {
+  background-color: mediumturquoise;
+}
+
+#bottom-section {
+  height: 100px;
+  background-color: mediumvioletred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bottom-section img {
+  margin: 0 10px;
+}
+
+#bottom-section a {
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#bottom-section a:hover {
+  background-color: palevioletred;
+}
+
+.nav-bar {
+  z-index: 1;
+  position: fixed;
+  /* 2 * padding + height = 50 */
+  height: 30px;
+  padding: 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1da4f8;
+}
+
+.nav-bar input {
+  position: relative;
+  height: 100%;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.nav-bar input:hover {
+  background-color: #0084d7;
+}

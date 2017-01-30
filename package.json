@@ -1,0 +1,23 @@
+{
+  "name": "melissamattingly",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "personal",
+    "site",
+    "web"
+  ],
+  "author": "Melissa O'Connor",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mmoconnor23/melissamattingly"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
