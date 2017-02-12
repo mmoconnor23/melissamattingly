@@ -3,12 +3,19 @@
   <title>Melissa Mattingly</title>
   <link rel="stylesheet" type="text/css" href="app.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Sacramento" rel="stylesheet">
+  <link rel="import" href="templates/about.html">
+  <link rel="import" href="templates/tech.html">
+  <link rel="import" href="templates/projects.html">
+  <link rel="import" href="templates/more.html">
 </head>
 <body>
   <div class="nav-bar">
     <input id="aboutme"
            type="button"
            value="About Me"></input>
+    <input id="tech"
+           type="button"
+           value="Experience"></input>
     <input id="projects"
            type="button"
            value="Projects"></input>
@@ -17,27 +24,13 @@
            value="More"></input>
   </div>
   <div id="app-container">
-    <div class="base-section" id="top-section">
-      <div class="mm-text">Melissa Mattingly O'Connor</div>
-      <div class="mm-text small-font">coding since 2012</div>
-    </div>
-    <div class="base-section" id="middle-section">
-      <!-- TODO: list projects here, pretty-styled sub-section scroll bar -->
-      <!-- TODO: twitterbot feed? -->
-      Goodnight moon!
-    </div>
-    <div class="base-section" id="bottom-section">
-      <a href="http://github.com/mmoconnor23"><img src="img/github-9-32.ico">Github</a>
-      <a href="http://twitter.com/bissamissa"><img src="img/twitter-32.ico">Twitter</a>
-      <a href="http://www.linkedin.com/pub/melissa-o-connor/35/201/80/en"><img src="img/linkedin-3-32.ico">LinkedIn</a>
-      <!-- TODO: name, e-mail, message, send e-mail from site-->
-      <a href="mailto:mmoconnor23@gmail.com"><img src="img/new-post-32.ico">Send e-mail</a>
-    </div>
+    <!--sections appended via imports-->
   </div>
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="app.js"></script>
 
   <!-- TODO: add google analytics tag -->
