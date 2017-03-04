@@ -121,12 +121,15 @@ p, li {
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin: 10px 0;
+  margin: 10px;
   border-radius: 5px;
+  background: linear-gradient(#8cd2fd, #9ed7fb);
 }
 
 .tech-background-sub p {
   font-size: 18px;
+  border-bottom: 1px solid mediumpurple;
+  padding-bottom: 5px;
 }
 
 .tech-background-sub ul {
@@ -174,7 +177,6 @@ p, li {
 .project-list {
   height: 100%;
   width: 50%;
-  border: 1px solid white;
   border-radius: 5px;
   background: linear-gradient(#65d8d4, #8fe3e0);
   margin-left: 30px;
@@ -188,6 +190,10 @@ p, li {
   color: #7056a7;
   font-size: 20px;
   margin: 5px;
+}
+
+.project-item hr {
+  border: 1px solid mediumpurple;
 }
 
 .project-date {
