@@ -12,7 +12,7 @@ let resizeSections = () => $('#app-container').css('height', window.innerHeight 
 
 let scrollToTop = (id) => {
   //50 to account for extra margin on top section
-  $('body').scrollTop($(id).position().top - 50);
+  $(window).scrollTop($(id).position().top - 50);
 };
 
 $('#aboutme').on('click', () => scrollToTop('#top-section'));
