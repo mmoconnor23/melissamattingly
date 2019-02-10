@@ -21,20 +21,20 @@ p, li {
   font-size: 24px;
 }
 
-#app-container {
+#app-container, #app-about, #app-tech, #app-projects {
   height: calc(100% - 50px);
 }
 
 .base-section {
-   height: calc(100% - 150px);
+   height: calc(100% - 100px);
    padding: 50px;
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
-.base-section:first-of-type {
-  padding-top: 100px;
+#app-about .base-section {
+  margin-top: 50px;
 }
 
 .section-title {
@@ -93,12 +93,6 @@ p, li {
   flex-direction: column;
 }
 
-#my-pic {
-   height:auto;
-   width: 50%;
-   border-radius:5px;
-}
-
 .tech-subsection {
   display:flex;
   flex:1;
@@ -115,11 +109,14 @@ p, li {
   flex-direction: column;
   width: 100%;
   margin-bottom: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .tech-background-sub {
   display: flex;
   flex: 1;
+  min-height: fit-content;
   flex-direction: column;
   margin-top: 5px;
   padding: 10px;
@@ -168,6 +165,10 @@ p, li {
   height: 100%;
   width: 100%;
   margin-top: 10px;
+}
+
+.projects-subsection a {
+  color: #2890ea;
 }
 
 .project-list {

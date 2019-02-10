@@ -1,12 +1,13 @@
-let links = document.querySelectorAll('link[rel="import"]');
-links.forEach((link) => {
-  let template = link.import.querySelector('template');
-  let clone = document.importNode(template.content, true);
-  document.querySelector('#app-container').appendChild(clone);
+$(() => {
+  // fetch templates to display on page
+  $("#app-about").load('templates/about.html');
+  $("#app-tech").load('templates/tech.html');
+  $("#app-projects").load('templates/projects.html');
+  $("#app-more").load('templates/more.html');
+
+  $(document).ready(() => resizeSections());
+  $(window).resize(() => resizeSections());
 });
-console.log(links);
-$(document).ready(() => resizeSections());
-$(window).resize(() => resizeSections());
 
 let resizeSections = () => $('#app-container').css('height', window.innerHeight + 'px');
 
