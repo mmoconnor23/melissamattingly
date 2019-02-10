@@ -8,7 +8,7 @@ input, a {
 }
 
 p, li {
-  color: white;
+  color: mediumpurple;;
 }
 
 .mm-text {
@@ -112,7 +112,7 @@ p, li {
 
 .tech-background {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -121,26 +121,22 @@ p, li {
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin: 10px;
+  margin-top: 5px;
+  padding: 10px;
   border-radius: 5px;
   background: linear-gradient(#8cd2fd, #9ed7fb);
 }
 
-.tech-background-sub p {
+.tech-background-sub .tech-title {
   font-size: 18px;
   border-bottom: 1px solid mediumpurple;
   padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: white;
 }
 
-.tech-background-sub ul {
+.tech-background-sub ul, p {
   margin: 0;
-}
-
-.tech-stack-img {
-  height: auto;
-  width: auto;
-  max-width: 20%;
-  max-height: 75%;
 }
 
 .factset-font {
